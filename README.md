@@ -1,2 +1,2 @@
-# wedidthat.github.io
+# wedidthat
 Website
