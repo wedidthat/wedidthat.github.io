@@ -1,1 +1,39 @@
-stylesheet.css
+@font-face {
+  font-family: 'Digestive';
+  src: url('assets/DigestiveVariable.ttf')  format('truetype'), /* Safari, Android, iOS */
+}
+
+.body {
+	top:  0; right:  0; bottom:  0; left:  0;
+	width:  100vw;
+	height:  100vh;
+	position:  absolute;
+}
+
+.background {
+    background: linear-gradient(130deg, #dfdcff, #ffe0e0);
+    background-size: 200% 200%;
+    width: 100vw;
+    height:  100vh;
+    -webkit-animation: AnimationName 10s ease infinite;
+    -moz-animation: AnimationName 10s ease infinite;
+    animation: AnimationName 10s ease infinite;
+    font-family: 'Digestive';
+    font-size: 6em;
+}
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
