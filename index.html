@@ -21,13 +21,74 @@
 	<div class="background">
 	</div>
 	<div class="text">
-		<div class="wdt">WE DID THAT</div>
+		<div class="wdt">
+			<div id="we" class="we words">
+			</div>
+			<div id="did" class="did words">
+			</div>
+			<div id="that" class="that words">
+			</div>
+		</div>
 		<div class="design" id="design">DESIGN</div>
 		<div class="slidecontainer">
 		  <input type="range" min="0" max="1000" value="700" class="slider" id="fader">
 		</div>
 	</div>
 </div>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+
+
+<script type="text/javascript">
+    let titles = ['<img src="assets/dude/We–Dolly.svg">', '<img src="assets/dude/We–Hank.svg">', '<img src="assets/dude/We–Johnny.svg">', '<img src="assets/dude/We–June.svg">', '<img src="assets/dude/We–Kitty.svg">', '<img src="assets/dude/We–Loretta.svg">', '<img src="assets/dude/We–Merle.svg">', '<img src="assets/dude/We–Patsy.svg">', '<img src="assets/dude/We–Tammy.svg">', '<img src="assets/dude/We–Townes.svg">', '<img src="assets/dude/We–Waylon.svg">', '<img src="assets/dude/We–Willie.svg">'];
+    let currentIndex = 0;
+    let aSpan = document.getElementById('we');
+
+    setInterval(() => {
+       
+       aSpan.innerHTML= titles[currentIndex];   
+       
+       currentIndex++;
+       
+       if (currentIndex === 11)
+        currentIndex = 0;
+
+    }, 400)
+</script>
+
+<script type="text/javascript">
+    let titles2 = ['<img src="assets/dude/Did–Tammy.svg">', '<img src="assets/dude/Did–Townes.svg">', '<img src="assets/dude/Did–Waylon.svg">', '<img src="assets/dude/Did–Willie.svg">', '<img src="assets/dude/Did–Dolly.svg">', '<img src="assets/dude/Did–Hank.svg">', '<img src="assets/dude/Did–Johnny.svg">', '<img src="assets/dude/Did–June.svg">', '<img src="assets/dude/Did–Kitty.svg">', '<img src="assets/dude/Did–Loretta.svg">', '<img src="assets/dude/Did–Merle.svg">', '<img src="assets/dude/Did–Patsy.svg">'];
+    let currentIndex2 = 0;
+    let aSpan2 = document.getElementById('did');
+
+    setInterval(() => {
+       
+       aSpan2.innerHTML= titles2[currentIndex2];   
+       
+       currentIndex2++;
+       
+       if (currentIndex2 === 11)
+        currentIndex2 = 0;
+
+    }, 400)
+</script>
+
+<script type="text/javascript">
+    let titles3 = ['<img src="assets/dude/That–Johnny.svg">', '<img src="assets/dude/That–June.svg">', '<img src="assets/dude/That–Tammy.svg">', '<img src="assets/dude/That–Dolly.svg">', '<img src="assets/dude/That–Hank.svg">', '<img src="assets/dude/That–Kitty.svg">', '<img src="assets/dude/That–Loretta.svg">', '<img src="assets/dude/That–Merle.svg">', '<img src="assets/dude/That–Patsy.svg">', '<img src="assets/dude/That–Townes.svg">', '<img src="assets/dude/That–Waylon.svg">', '<img src="assets/dude/That–Willie.svg">'];
+    let currentIndex3 = 0;
+    let aSpan3 = document.getElementById('that');
+
+    setInterval(() => {
+       
+       aSpan3.innerHTML= titles3[currentIndex3];   
+       
+       currentIndex3++;
+       
+       if (currentIndex3 === 11)
+        currentIndex3 = 0;
+
+    }, 400)
+</script>
+
 <script>
 		  $("#fader").on("input",function () {
             $('#design').css("font-variation-settings", "'wdth'" + $(this).val() );

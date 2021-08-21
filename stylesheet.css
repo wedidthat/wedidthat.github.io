@@ -11,6 +11,37 @@
 	position:  absolute;
 }
 
+.words {
+  display: inline-block;
+}
+
+.words img {
+  display: block;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
+
+.we {
+  width:  22%;
+  height:  10vh;
+  margin-right: 5px;
+}
+
+.did {
+  width:  22%;
+  height:  10vh;
+  margin: 0 5px;
+}
+
+.that {
+  width: 34%;
+  height:  10vh;
+  margin-left: 5px;
+}
+
 .text {
 	width:  80%;
 	position: absolute;
