@@ -1,5 +1,9 @@
 @font-face {
-  font-family: 'Digestive';
+  font-family: 'Digestive one';
+  font-family: 'Digestive two';
+  font-family: 'Digestive three';
+  font-family: 'Digestive four';
+  font-family: 'Digestive five';
   src: url('assets/DigestiveVariable.ttf')  format('truetype'), /* Safari, Android, iOS */
 }
 
@@ -10,16 +14,29 @@
 	position:  absolute;
 }
 
+.text {
+	width:  90%;
+	max-width: 60%;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 6em;
+	color:  #FF1C31;
+	text-align: center;
+	font-family: 'Digestive five';
+	font-weight: 'two';
+}
+
 .background {
-    background: linear-gradient(130deg, #dfdcff, #ffe0e0);
-    background-size: 200% 200%;
+    background: linear-gradient(45deg, #dfdcff, #ffe0e0);
+    background-size: 150% 150%;
     width: 100vw;
     height:  100vh;
     -webkit-animation: AnimationName 10s ease infinite;
     -moz-animation: AnimationName 10s ease infinite;
     animation: AnimationName 10s ease infinite;
-    font-family: 'Digestive';
-    font-size: 6em;
+    font-style: four;
 }
 
 @-webkit-keyframes AnimationName {
