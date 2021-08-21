@@ -4,7 +4,7 @@
   font-family: 'Digestive three';
   font-family: 'Digestive four';
   font-family: 'Digestive five';
-  src: url('assets/DigestiveVariable.ttf')  format('truetype'), /* Safari, Android, iOS */
+  src: url('/assets/DigestiveVariable.ttf')  format('truetype'), /* Safari, Android, iOS */
 }
 
 .body {
@@ -24,8 +24,7 @@
 	font-size: 6em;
 	color:  #FF1C31;
 	text-align: center;
-	font-family: 'Digestive five';
-	font-weight: 'two';
+	font-family: 'Digestive four';
 }
 
 .background {
