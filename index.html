@@ -15,22 +15,25 @@
 	<link href="https://fonts.googleapis.com/css?family=Archivo+Black" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Archivo:400,500" rel="stylesheet">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-	<script>
-	$( function() {
-	  $( "#slider" ).slider();
-	} );
-	</script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 </head>
 <body>
+	
 <div class="body">
 	<div class="background">
 	</div>
 	<div class="text">
 		<div class="wdt">WE DID THAT</div>
-		<div class="design">DESIGN</div>
+		<div class="design" id="design">DESIGN</div>
+		<div class="slidecontainer">
+		  <input type="range" min="0" max="200" value="100" class="slider" id="fader">
+		</div>
 	</div>
 </div>
+<script>
+		  $("#fader").on("input",function () {
+            $('#design').css("font-size", $(this).val() + "px");
+    });
+</script>
 </body>
 </html>
