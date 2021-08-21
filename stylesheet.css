@@ -65,7 +65,7 @@
 
 
 .slidecontainer {
-  max-width: 100%; /* Width of the outside container */
+  max-width: 70%; /* Width of the outside container */
   max-width: 350px; /* Width of the outside container */
   margin:  30px auto 0;
   font-size: 16px;
