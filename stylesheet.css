@@ -1,6 +1,6 @@
 @font-face {
 	font-family:  'Digestive';
-	src:  url(/assets/DigestiveVariable.ttf) format("truetype");;
+	src:  url(assets/DigestiveVariable.ttf) format("truetype");;
 
 }
 
@@ -21,7 +21,12 @@
 	color:  #FF1C31;
 	text-align: center;
 	font-family: 'Digestive', serif;
-	font-stretch: 20%;
+	font-stretch: 100%;
+	font-variation-settings: 'wdth' 500;
+}
+
+.design {
+	font-variation-settings: 'wdth' 700;
 }
 
 @media only screen and (max-width: 1000px) {
@@ -55,4 +60,50 @@
     0%{background-position:0% 50%}
     50%{background-position:100% 50%}
     100%{background-position:0% 50%}
+}
+
+
+
+.slidecontainer {
+  max-width: 100%; /* Width of the outside container */
+  max-width: 350px; /* Width of the outside container */
+  margin:  30px auto 0;
+  font-size: 16px;
+}
+
+/* The slider itself */
+.slider {
+  -webkit-appearance: none;  /* Override default CSS styles */
+  appearance: none;
+  width: 100%; /* Full-width */
+  height: 7px; /* Specified height */
+  border-radius: 100px;
+  background: #C8C5FF; /* Grey background */
+  outline: none; /* Remove outline */
+  -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+  transition: opacity .2s;
+}
+
+/* Mouse-over effects */
+.slider:hover {
+  opacity: 1; /* Fully shown on mouse-over */
+}
+
+/* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Override default look */
+  appearance: none;
+  width: 25px; /* Set a specific slider handle width */
+  height: 25px; /* Slider handle height */
+  background: #ffffff; /* Green background */
+  border-radius: 100%;
+  border: 5px solid #FF1C31;
+  cursor: pointer; /* Cursor on hover */
+}
+
+.slider::-moz-range-thumb {
+  width: 25px; /* Set a specific slider handle width */
+  height: 25px; /* Slider handle height */
+  background: #ffffff; /* Green background */
+  cursor: pointer; /* Cursor on hover */
 }

@@ -24,13 +24,13 @@
 		<div class="wdt">WE DID THAT</div>
 		<div class="design" id="design">DESIGN</div>
 		<div class="slidecontainer">
-		  <input type="range" min="0" max="200" value="100" class="slider" id="myRange">
+		  <input type="range" min="0" max="1000" value="700" class="slider" id="fader">
 		</div>
 	</div>
 </div>
 <script>
 		  $("#fader").on("input",function () {
-            $('#design').css("font-size", $(this).val() + "px");
+            $('#design').css("font-variation-settings", "'wdth'" + $(this).val() );
     });
 </script>
 </body>
