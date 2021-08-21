@@ -1,6 +1,8 @@
 @font-face {
-  font-family: 'Digestive one';
-  src: url('DigestiveVariable.ttf')  format('truetype'), /* Safari, Android, iOS */
+  font-family: 'Digestive';
+  src: url('assets/DigestiveVariable.ttf')  format('truetype');
+  font-weight: normal;
+  font-style: normal;
 }
 
 .body {
