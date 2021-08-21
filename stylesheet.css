@@ -63,12 +63,32 @@
 @media only screen and (max-width: 1000px) {
   .text {
     font-size: 17vw;
-	width:  80%;
+	  width:  80%;
   }
 
   .background {
       background: linear-gradient(-80deg, #F6E0E5, #E5E1F8);
       background-size: 800% 800%;
+  }
+
+  .words {
+    display: inline-block;
+    height:  16vw;
+  }
+
+  .we {
+    width:  41%;
+    margin-bottom: 1vh;
+  }
+
+  .did {
+    width:  40%;
+    margin: 1vh 0px;
+  }
+
+  .that {
+    width: 65%;
+    margin-top: 1vh;
   }
 }
 
