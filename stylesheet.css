@@ -19,7 +19,7 @@
 	transform: translate(-50%, -50%);
 	font-size: 12vw;
 	color:  #FF1C31;
-	text-align: center;
+	text-align: left;
 	font-family: 'Digestive', serif;
 	font-stretch: 100%;
 	font-variation-settings: 'wdth' 500;
@@ -37,13 +37,13 @@
 }
 
 .background {
-    background: linear-gradient(-45deg, #ffe0e0, #dfdcff);
+    background: linear-gradient(-80deg, #FBCBCB, #C9C5F9);
     background-size: 500% 500%;
     width: 100vw;
     height:  100vh;
-    -webkit-animation: AnimationName 15s ease infinite;
-    -moz-animation: AnimationName 15s ease infinite;
-    animation: AnimationName 15s ease infinite;
+    -webkit-animation: AnimationName 10s ease infinite;
+    -moz-animation: AnimationName 10s ease infinite;
+    animation: AnimationName 10s ease infinite;
 }
 
 @-webkit-keyframes AnimationName {
@@ -67,7 +67,7 @@
 .slidecontainer {
   max-width: 70%; /* Width of the outside container */
   max-width: 350px; /* Width of the outside container */
-  margin:  30px auto 0;
+  margin:  30px 0 0 0;
   font-size: 16px;
 }
 
@@ -78,7 +78,7 @@
   width: 100%; /* Full-width */
   height: 7px; /* Specified height */
   border-radius: 100px;
-  background: #C8C5FF; /* Grey background */
+  background: rgba(255,255,255,30%); /* Grey background */
   outline: none; /* Remove outline */
   -webkit-transition: .2s; /* 0.2 seconds transition on hover */
   transition: opacity .2s;
@@ -86,7 +86,6 @@
 
 /* Mouse-over effects */
 .slider:hover {
-  opacity: 1; /* Fully shown on mouse-over */
 }
 
 /* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
@@ -99,6 +98,15 @@
   border-radius: 100%;
   border: 5px solid #FF1C31;
   cursor: pointer; /* Cursor on hover */
+  -webkit-transition: .1s; /* 0.2 seconds transition on hover */
+  transition: .1s;
+}
+
+.slider::-webkit-slider-thumb:hover {
+  transform: scale(1.2);
+  -webkit-transition: .1s; /* 0.2 seconds transition on hover */
+  transition: .1s;
+  box-shadow: 0px 1px 10px rgba(95, 88, 223, 0.5);
 }
 
 .slider::-moz-range-thumb {
