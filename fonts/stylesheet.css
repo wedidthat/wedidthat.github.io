@@ -1,7 +1,61 @@
 @font-face {
+    font-family: 'Digestive five';
+    src: url('Digestive-five.woff2') format('woff2'),
+        url('Digestive-five.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Digestive four';
+    src: url('Digestive-four.woff2') format('woff2'),
+        url('Digestive-four.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
     font-family: 'Digestive zero';
     src: url('Digestive-zero.woff2') format('woff2'),
         url('Digestive-zero.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Digestive small';
+    src: url('Digestive-small.woff2') format('woff2'),
+        url('Digestive-small.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Digestive one';
+    src: url('Digestive-one.woff2') format('woff2'),
+        url('Digestive-one.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Digestive two';
+    src: url('Digestive-two.woff2') format('woff2'),
+        url('Digestive-two.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Digestive three';
+    src: url('Digestive-three.woff2') format('woff2'),
+        url('Digestive-three.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
