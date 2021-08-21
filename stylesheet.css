@@ -4,7 +4,7 @@
   font-family: 'Digestive three';
   font-family: 'Digestive four';
   font-family: 'Digestive five';
-  src: url('/assets/DigestiveVariable.ttf')  format('truetype'), /* Safari, Android, iOS */
+  src: url('DigestiveVariable.ttf')  format('truetype'), /* Safari, Android, iOS */
 }
 
 .body {
