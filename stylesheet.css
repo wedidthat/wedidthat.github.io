@@ -7,15 +7,21 @@
 
 .text {
 	width:  90%;
-	max-width: 60%;
+	max-width: 900px;
 	position: absolute;
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-	font-size: 7vw;
+	font-size: 10vw;
 	color:  #FF1C31;
 	text-align: center;
-	font-family: 'Digestive zero', serif;
+	font-family: 'Digestive three', serif;
+}
+
+@media only screen and (max-width: 1000px) {
+  .text {
+    font-size: 18vh;
+  }
 }
 
 .background {
@@ -26,7 +32,6 @@
     -webkit-animation: AnimationName 10s ease infinite;
     -moz-animation: AnimationName 10s ease infinite;
     animation: AnimationName 10s ease infinite;
-    font-style: four;
 }
 
 @-webkit-keyframes AnimationName {
