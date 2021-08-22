@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>We Did That Design</title>
+	<script src="scripts.js"></script>
+	<link rel="shortcut icon" href="assets/favicon.png">
+	<meta name="description" content="A one-man design consultancy with occassional guest stars. We handle everything from branding to site design to UX research to workshop facilitation.">
+	<meta name="keywords" content="adam, baumgartner, we did that, we, did, that, design, consultancy, freelance, designer">
+	<meta name="author" content="Adam Baumgartner">
+	<meta property="og:image" content="assets/lips.png">
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
+	<link href="stylesheet.css" rel="stylesheet" type="text/css">
+	<!--<link href="/fonts/stylesheet.css" rel="stylesheet" type="text/css">-->
+	<link href="https://fonts.googleapis.com/css?family=Archivo+Black" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Archivo:400,500" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<body>
+	
+<div class="body">
+	<div class="background">
+	</div>
+	<div class="text">
+		<div class="wdt">
+			<ul id="slides">
+			  <li class="slide"><img alt="We" src="assets/dude/We–Patsy.svg"></li>
+			  <li class="slide"><img alt="We" src="assets/dude/We–Tammy.svg"></li>
+			  <li class="slide"><img alt="We" src="assets/dude/We–Hank.svg"></li>
+			  <li class="slide"><img alt="We" src="assets/dude/We–Johnny.svg"></li>
+			  <li class="slide"><img alt="We" src="assets/dude/We–June.svg"></li>
+			  <li class="slide showing"><img alt="We" src="assets/dude/We–Dolly.svg"></li>
+			  <li class="slide"><img alt="We" src="assets/dude/We–Kitty.svg"></li>
+			  <li class="slide"><img alt="We" src="assets/dude/We–Loretta.svg"></li>
+			  <li class="slide"><img alt="We" src="assets/dude/We–Merle.svg"></li>
+			  <li class="slide"><img alt="We" src="assets/dude/We–Townes.svg"></li>
+			  <li class="slide"><img alt="We" src="assets/dude/We–Waylon.svg"></li>
+			  <li class="slide"><img alt="We" src="assets/dude/We–Willie.svg"></li>
+			</ul>
+			<ul id="slides2">
+			  <li class="slide2"><img alt="Did" src="assets/dude/Did–Loretta.svg"></li>
+			  <li class="slide2"><img alt="Did" src="assets/dude/Did–Merle.svg"></li>
+			  <li class="slide2"><img alt="Did" src="assets/dude/Did–Johnny.svg"></li>
+			  <li class="slide2"><img alt="Did" src="assets/dude/Did–June.svg"></li>
+			  <li class="slide2"><img alt="Did" src="assets/dude/Did–Kitty.svg"></li>
+			  <li class="slide2"><img alt="Did" src="assets/dude/Did–Townes.svg"></li>
+			  <li class="slide2"><img alt="Did" src="assets/dude/Did–Waylon.svg"></li>
+			  <li class="slide2"><img alt="Did" src="assets/dude/Did–Willie.svg"></li>
+			  <li class="slide2"><img alt="Did" src="assets/dude/Did–Patsy.svg"></li>
+			  <li class="slide2"><img alt="Did" src="assets/dude/Did–Tammy.svg"></li>
+			  <li class="slide2 showing"><img alt="Did" src="assets/dude/Did–Dolly.svg"></li>
+			  <li class="slide2"><img alt="Did" src="assets/dude/Did–Hank.svg"></li>
+			</ul>
+			<ul id="slides3">
+			  <li class="slide3"><img alt="That" src="assets/dude/That–Hank.svg"></li>
+			  <li class="slide3"><img alt="That" src="assets/dude/That–Johnny.svg"></li>
+			  <li class="slide3"><img alt="That" src="assets/dude/That–June.svg"></li>
+			  <li class="slide3 showing"><img alt="That" src="assets/dude/That–Dolly.svg"></li>
+			  <li class="slide3"><img alt="That" src="assets/dude/That–Kitty.svg"></li>
+			  <li class="slide3"><img alt="That" src="assets/dude/That–Loretta.svg"></li>
+			  <li class="slide3"><img alt="That" src="assets/dude/That–Townes.svg"></li>
+			  <li class="slide3"><img alt="That" src="assets/dude/That–Waylon.svg"></li>
+			  <li class="slide3"><img alt="That" src="assets/dude/That–Willie.svg"></li>
+			  <li class="slide3"><img alt="That" src="assets/dude/That–Merle.svg"></li>
+			  <li class="slide3"><img alt="That" src="assets/dude/That–Patsy.svg"></li>
+			  <li class="slide3"><img alt="That" src="assets/dude/That–Tammy.svg"></li>
+			</ul>
+		</div>
+		<div class="design" id="design">DESIGN</div>
+		<div class="slidecontainer">
+		  <input type="range" min="0" max="1000" value="700" class="slider" id="fader">
+		</div>
+	</div>
+</div>
+
+<script>
+	var slides = document.querySelectorAll('#slides .slide');
+var currentSlide = 0;
+var slideInterval = setInterval(nextSlide,300);
+
+function nextSlide(){
+	slides[currentSlide].className = 'slide';
+	currentSlide = (currentSlide+1)%slides.length;
+	slides[currentSlide].className = 'slide showing';
+}
+
+var playing = true;
+var pauseButton = document.getElementById('slides');
+
+function pauseSlideshow(){
+	playing = false;
+	clearInterval(slideInterval);
+}
+
+function playSlideshow(){
+	playing = true;
+	slideInterval = setInterval(nextSlide,300);
+}
+
+pauseButton.onclick = function(){
+	if(playing){ pauseSlideshow(); }
+	else{ playSlideshow(); }
+};</script>
+
+
+<script>
+	var slides2 = document.querySelectorAll('#slides2 .slide2');
+var currentSlide2 = 0;
+var slideInterval2 = setInterval(nextSlide2,300);
+
+function nextSlide2(){
+	slides2[currentSlide2].className = 'slide2';
+	currentSlide2 = (currentSlide2+1)%slides.length;
+	slides2[currentSlide2].className = 'slide2 showing';
+}
+
+var playing2 = true;
+var pauseButton2 = document.getElementById('slides2');
+
+function pauseSlideshow2(){
+	playing2 = false;
+	clearInterval(slideInterval2);
+}
+
+function playSlideshow2(){
+	playing2 = true;
+	slideInterval2 = setInterval(nextSlide2,300);
+}
+
+pauseButton2.onclick = function(){
+	if(playing2){ pauseSlideshow2(); }
+	else{ playSlideshow2(); }
+};</script>
+
+<script>
+	var slides3 = document.querySelectorAll('#slides3 .slide3');
+var currentSlide3 = 0;
+var slideInterval3 = setInterval(nextSlide3,300);
+
+function nextSlide3(){
+	slides3[currentSlide3].className = 'slide3';
+	currentSlide3 = (currentSlide3+1)%slides.length;
+	slides3[currentSlide3].className = 'slide3 showing';
+}
+
+var playing3 = true;
+var pauseButton3 = document.getElementById('slides3');
+
+function pauseSlideshow3(){
+	playing3 = false;
+	clearInterval(slideInterval3);
+}
+
+function playSlideshow3(){
+	playing3 = true;
+	slideInterval3 = setInterval(nextSlide3,300);
+}
+
+pauseButton3.onclick = function(){
+	if(playing3){ pauseSlideshow3(); }
+	else{ playSlideshow3(); }
+};</script>
+
+
+<script>
+		  $("#fader").on("input",function () {
+            $('#design').css("font-variation-settings", "'wdth'" + $(this).val() );
+    });
+</script>
+
+
+</body>
+</html>

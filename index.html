@@ -38,8 +38,8 @@
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 
 
-<script type="text/javascript">
-    let titles = ['<img src="assets/dude/We–Dolly.svg">', '<img src="assets/dude/We–Hank.svg">', '<img src="assets/dude/We–Johnny.svg">', '<img src="assets/dude/We–June.svg">', '<img src="assets/dude/We–Kitty.svg">', '<img src="assets/dude/We–Loretta.svg">', '<img src="assets/dude/We–Merle.svg">', '<img src="assets/dude/We–Patsy.svg">', '<img src="assets/dude/We–Tammy.svg">', '<img src="assets/dude/We–Townes.svg">', '<img src="assets/dude/We–Waylon.svg">', '<img src="assets/dude/We–Willie.svg">'];
+<!--<script type="text/javascript">
+    let titles = ['<img alt="We" src="assets/dude/We–Dolly.svg">', '<img alt="We" src="assets/dude/We–Hank.svg">', '<img alt="We" src="assets/dude/We–Johnny.svg">', '<img alt="We" src="assets/dude/We–June.svg">', '<img alt="We" src="assets/dude/We–Kitty.svg">', '<img alt="We" src="assets/dude/We–Loretta.svg">', '<img alt="We" src="assets/dude/We–Merle.svg">', '<img alt="We" src="assets/dude/We–Patsy.svg">', '<img alt="We" src="assets/dude/We–Tammy.svg">', '<img alt="We" src="assets/dude/We–Townes.svg">', '<img alt="We" src="assets/dude/We–Waylon.svg">', '<img alt="We" src="assets/dude/We–Willie.svg">'];
     let currentIndex = 0;
     let aSpan = document.getElementById('we');
 
@@ -52,11 +52,11 @@
        if (currentIndex === 11)
         currentIndex = 0;
 
-    }, 400)
+    }, 300)
 </script>
 
 <script type="text/javascript">
-    let titles2 = ['<img src="assets/dude/Did–Tammy.svg">', '<img src="assets/dude/Did–Townes.svg">', '<img src="assets/dude/Did–Waylon.svg">', '<img src="assets/dude/Did–Willie.svg">', '<img src="assets/dude/Did–Dolly.svg">', '<img src="assets/dude/Did–Hank.svg">', '<img src="assets/dude/Did–Johnny.svg">', '<img src="assets/dude/Did–June.svg">', '<img src="assets/dude/Did–Kitty.svg">', '<img src="assets/dude/Did–Loretta.svg">', '<img src="assets/dude/Did–Merle.svg">', '<img src="assets/dude/Did–Patsy.svg">'];
+    let titles2 = ['<img alt="did" src="assets/dude/Did–Tammy.svg">', '<img alt="Did" src="assets/dude/Did–Townes.svg">', '<img alt="Did" src="assets/dude/Did–Waylon.svg">', '<img alt="Did" src="assets/dude/Did–Willie.svg">', '<img alt="Did" src="assets/dude/Did–Dolly.svg">', '<img alt="Did" src="assets/dude/Did–Hank.svg">', '<img alt="Did" src="assets/dude/Did–Johnny.svg">', '<img alt="Did" src="assets/dude/Did–June.svg">', '<img alt="Did" src="assets/dude/Did–Kitty.svg">', '<img alt="Did" src="assets/dude/Did–Loretta.svg">', '<img alt="Did" src="assets/dude/Did–Merle.svg">', '<img alt="Did" src="assets/dude/Did–Patsy.svg">'];
     let currentIndex2 = 0;
     let aSpan2 = document.getElementById('did');
 
@@ -69,11 +69,12 @@
        if (currentIndex2 === 11)
         currentIndex2 = 0;
 
-    }, 400)
+    }, 300)
 </script>
 
+
 <script type="text/javascript">
-    let titles3 = ['<img src="assets/dude/That–Johnny.svg">', '<img src="assets/dude/That–June.svg">', '<img src="assets/dude/That–Tammy.svg">', '<img src="assets/dude/That–Dolly.svg">', '<img src="assets/dude/That–Hank.svg">', '<img src="assets/dude/That–Kitty.svg">', '<img src="assets/dude/That–Loretta.svg">', '<img src="assets/dude/That–Merle.svg">', '<img src="assets/dude/That–Patsy.svg">', '<img src="assets/dude/That–Townes.svg">', '<img src="assets/dude/That–Waylon.svg">', '<img src="assets/dude/That–Willie.svg">'];
+    let titles3 = ['<img alt="That" src="assets/dude/That–Johnny.svg">', '<img alt="That" src="assets/dude/That–June.svg">', '<img alt="That" src="assets/dude/That–Tammy.svg">', '<img alt="That" src="assets/dude/That–Dolly.svg">', '<img alt="That" src="assets/dude/That–Hank.svg">', '<img alt="That" src="assets/dude/That–Kitty.svg">', '<img alt="That" src="assets/dude/That–Loretta.svg">', '<img alt="That" src="assets/dude/That–Merle.svg">', '<img alt="That" src="assets/dude/That–Patsy.svg">', '<img alt="That" src="assets/dude/That–Townes.svg">', '<img alt="That" src="assets/dude/That–Waylon.svg">', '<img alt="That" src="assets/dude/That–Willie.svg">'];
     let currentIndex3 = 0;
     let aSpan3 = document.getElementById('that');
 
@@ -86,7 +87,29 @@
        if (currentIndex3 === 11)
         currentIndex3 = 0;
 
-    }, 400)
+    }, 300)
+</script>-->
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
 </script>
 
 <script>

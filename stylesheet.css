@@ -1,3 +1,5 @@
+html, body, div, span, applet, object, iframe,h1, h2, h3, h4, h5, h6, p, blockquote, pre,a, abbr, acronym, address, big, cite, code,del, dfn, em, img, ins, kbd, q, s, samp,small, strike, strong, sub, sup, tt, var,b, u, i, center,dl, dt, dd, ol, ul, li,fieldset, form, label, legend,table, caption, tbody, tfoot, thead, tr, th, td,article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,time, mark, audio, video {margin: 0;padding: 0;border: 0;font-size: 100%;font: inherit;vertical-align: baseline;}/* HTML5 display-role reset for older browsers */article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {display: block;}body {line-height: 1;}ol, ul {list-style: none;}blockquote, q {quotes: none;}blockquote:before, blockquote:after,q:before, q:after {content: '';content: none;}table {border-collapse: collapse;border-spacing: 0;}a {text-decoration:none;color:inherit;}
+
 @font-face {
 	font-family:  'Digestive';
 	src:  url(assets/DigestiveVariable.ttf) format("truetype");;
@@ -24,23 +26,7 @@
   width: 100%;
 }
 
-.we {
-  width:  22%;
-  height:  10vh;
-  margin-right: 5px;
-}
 
-.did {
-  width:  22%;
-  height:  10vh;
-  margin: 0 5px;
-}
-
-.that {
-  width: 34%;
-  height:  10vh;
-  margin-left: 5px;
-}
 
 .text {
 	width:  80%;
@@ -48,7 +34,7 @@
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-	font-size: 11vw;
+	font-size: 10vw;
 	color:  #FF1C31;
 	text-align: left;
 	font-family: 'Digestive', serif;
@@ -58,38 +44,6 @@
 
 .design {
 	font-variation-settings: 'wdth' 700;
-}
-
-@media only screen and (max-width: 1000px) {
-  .text {
-    font-size: 17vw;
-	  width:  80%;
-  }
-
-  .background {
-      background: linear-gradient(-80deg, #F6E0E5, #E5E1F8);
-      background-size: 800% 800%;
-  }
-
-  .words {
-    display: inline-block;
-    height:  16vw;
-  }
-
-  .we {
-    width:  41%;
-    margin-bottom: 1vh;
-  }
-
-  .did {
-    width:  40%;
-    margin: 1vh 0px;
-  }
-
-  .that {
-    width: 65%;
-    margin-top: 1vh;
-  }
 }
 
 .background {
@@ -170,4 +124,119 @@
   height: 25px; /* Slider handle height */
   background: #ffffff; /* Green background */
   cursor: pointer; /* Cursor on hover */
+}
+
+/*///////////////////////////////////////
+
+/*
+essential styles:
+these make the slideshow work
+*/
+#slides, #slides2, #slides3{
+  position: relative;
+  height:  5vw;
+  padding: 0px;
+  margin: 0px;
+  list-style-type: none;
+}
+
+.slide, .slide2, .slide3 {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  opacity: 0;
+  z-index: 1;
+  width:  100%;
+}
+
+#slides {
+  width: 18vw;
+  display: inline-block;
+  margin-right: 1vw;
+}
+
+#slides2 {
+  width: 17vw;
+  display: inline-block;
+  margin-right: 1vw;
+  margin-left: 1vw;
+}
+
+#slides3 {
+  width: 27vw;
+  display: inline-block;
+  margin-left: 0.1vw;
+}
+
+.showing{
+  opacity: 1;
+  z-index: 2;
+}
+
+.slide img, .slide2 img, .slide3 img {
+  display: block;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
+
+/*
+non-essential styles:
+just for appearance; change whatever you want
+*/
+
+@media only screen and (max-width: 1000px) {
+  .text {
+    font-size: 17vw;
+    width:  80%;
+  }
+
+  .background {
+      background: linear-gradient(-80deg, #F6E0E5, #E5E1F8);
+      background-size: 800% 800%;
+  }
+
+  .words {
+    display: inline-block;
+    height:  16vw;
+  }
+
+  .we {
+    width:  23vw;
+    margin-bottom: 0.7vw;
+  }
+
+  .did {
+    width:  23vw;
+    margin-bottom: 0.7vw;
+  }
+
+  .that {
+    width: 30vw;
+    margin-top: 1.75vw;
+    
+  }
+
+  #slides {
+    width: 30vw;
+    display: inline-block;
+    margin-right: 1vw;
+    margin-bottom: 2vw;
+  }
+
+  #slides2 {
+    width: 29vw;
+    display: inline-block;
+    margin-right: 1vw;
+    margin-left: 1vw;
+    margin-bottom: 2vw;
+  }
+
+  #slides3 {
+    width: 48vw;
+    display: inline-block;
+    margin-bottom: 2vw;
+  }
 }
