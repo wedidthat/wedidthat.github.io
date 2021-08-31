@@ -54,29 +54,12 @@
 			border-bottom: 3px solid #000;
 		}
 
-		.curved-text {
-			font-size: 1vw;
-			line-height: 100%;
-			font-family:  LeonardoFascia-S;
-			text-transform: uppercase;
-		}
-
-
-		.section1 {
-			border-top: 3px solid #000;
-
-		}
-
-		.section2 {
-
-		}
-
 		.text1 {
 			position: absolute;
 			bottom: 5vw;
 			left: 5vw;
 			width: 70%;
-			font-size: 11vw;
+			font-size: 22vh;
 			line-height: 100%;
 		}
 
@@ -86,9 +69,65 @@
 			right: 5vw;
 			text-align: right;
 			width: 70%;
-			font-size: 11vw;
+			font-size: 22vh;
 			line-height: 100%;
 
+		}
+
+		.curved-text {
+			font-size: 16vh;
+			line-height: 100%;
+			font-family:  LeonardoFascia-S;
+			text-transform: uppercase;
+		}
+
+		.curved-text2 {
+			font-size: 16vh;
+			line-height: 100%;
+			font-family:  PPNeueMachina;
+			font-weight:  300;
+			text-transform: uppercase;
+		}
+
+		.text-cont {
+			position: absolute;
+			top: 50%;
+			width: 84vw;
+			left: 8vw;
+			transform: translateY(-50%);
+			height: 90%;
+		}
+
+		.sell {
+			overflow: visible;
+			position: absolute;
+			left: 0vw;
+			top: 30vh;
+		}
+
+		.your {
+			overflow: visible;
+			position: absolute;
+			left: 40vh;
+			top: 6vh;
+		}
+
+		.instagram {
+			overflow: visible;
+			position: absolute;
+			left: 0vw;
+			bottom: 10vh;
+		}
+
+		.section1 {
+			border-top: 3px solid #000;
+
+		}
+
+		.section3 {
+			background-image: url('dotbg1.jpg');
+			background-repeat: repeat;
+			background-size: 150px;
 		}
 
 
@@ -126,14 +165,36 @@
 		</div>
 </div>
 <div class="section3">
-	<svg viewBox="0 0 500 500">
-	  <path id="curve" fill="transparent" d="M73.2,148.6c4-6.1,65.5-96.8,178.6-95.6c111.3,1.2,170.8,90.3,175.1,97" />
-	  <text class="curved-text" width="500">
-	    <textPath xlink:href="#curve">
-	      SELL YOUR
+	<div class="text-cont">
+	<svg class="sell">
+	  <path id="curve" fill="transparent" d="M0,0S108.71,145.59,332.24,142.65c76.31-1,157.08-12.12,237-37.28" />
+	  <text class="curved-text">
+	    <textPath style="letter-spacing:6px;" xlink:href="#curve">
+	      SELL
 	    </textPath>
 	  </text>
 	</svg>
+
+	<svg class="your">
+	  <path id="curve2" fill="transparent" d="M0,330.37C154.13,281.85,305,181.11,414.48,0" />
+	  <text class="curved-text2">
+	    <textPath style="letter-spacing:6px;" xlink:href="#curve2">
+	      YOUR
+	    </textPath>
+	  </text>
+	</svg>
+
+	<svg class="instagram">
+	  <path id="curve3" fill="transparent" d="M0,0S155,84,333.28,84s271.49-78.28,408-78.28S955,76.63,955,76.63" />
+	  <text class="curved-text">
+	    <textPath style="letter-spacing:6px;" xlink:href="#curve3">
+	      INSTAGRAM
+	    </textPath>
+	  </text>
+	</svg>
+
+
+	</div>
 </div>
 
 <script>
