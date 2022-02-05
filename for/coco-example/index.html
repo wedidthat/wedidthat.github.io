@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>jQuery Hover3d</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+				<div class="column">
+					<div class="thumbnail">
+						<div class="thumbnail-header">
+							<div class="user">
+								<div class="face">
+								</div>
+								<div class="name">
+									<span>billieeilish</span>
+								</div>
+							</div>
+							<div class="icons">
+								<img src="dist/images/leaf.svg">
+								<img src="dist/images/present.svg">
+							</div>
+						</div>
+						<div class="movie">
+							<div class="movie__card">
+								<div class="layer-1"><img src="dist/images/mushrooms3.jpg"></div>
+							</div>
+						</div>
+						<div class="thumbnail-footer">
+							<div class="details-top">
+								<div class="title">
+									<span>Title goes here</span>
+								</div>
+								<div class="editions">
+									<span>77 / 100</span>
+								</div>
+							</div>
+							<div class="details-bottom">
+								<div class="price">
+									<span class="eth">0.5 ETH</span>
+									<span class="usd">$125.38</span>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="thumbnail">
+						<div class="thumbnail-header">
+							<div class="user">
+								<div class="face">
+								</div>
+								<div class="name">
+									<span>billieeilish</span>
+								</div>
+							</div>
+							<div class="icons">
+								<img src="dist/images/leaf.svg">
+								<img src="dist/images/present.svg">
+							</div>
+						</div>
+						<div class="movie">
+							<div class="movie__card">
+								<div class="layer-1"><img src="dist/images/image2.jpg"></div>
+							</div>
+						</div>
+						<div class="thumbnail-footer">
+							<div class="details-top">
+								<div class="title">
+									<span>Title goes here</span>
+								</div>
+								<div class="editions">
+									<span>77 / 100</span>
+								</div>
+							</div>
+							<div class="details-bottom">
+								<div class="price">
+									<span class="eth">0.5 ETH</span>
+									<span class="usd">$125.38</span>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="thumbnail">
+						<div class="thumbnail-header">
+							<div class="user">
+								<div class="face">
+								</div>
+								<div class="name">
+									<span>billieeilish</span>
+								</div>
+							</div>
+							<div class="icons">
+								<img src="dist/images/leaf.svg">
+								<img src="dist/images/present.svg">
+							</div>
+						</div>
+						<div class="movie">
+							<div class="movie__card">
+								<div class="layer-1"><img src="dist/images/image5.jpg"></div>
+							</div>
+						</div>
+						<div class="thumbnail-footer">
+							<div class="details-top">
+								<div class="title">
+									<span>Title goes here</span>
+								</div>
+								<div class="editions">
+									<span>77 / 100</span>
+								</div>
+							</div>
+							<div class="details-bottom">
+								<div class="price">
+									<span class="eth">0.5 ETH</span>
+									<span class="usd">$125.38</span>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="thumbnail">
+						<div class="thumbnail-header">
+							<div class="user">
+								<div class="face">
+								</div>
+								<div class="name">
+									<span>billieeilish</span>
+								</div>
+							</div>
+							<div class="icons">
+								<img src="dist/images/present.svg">
+							</div>
+						</div>
+						<div class="movie">
+							<div class="movie__card">
+								<div class="layer-1"><img src="dist/images/image4.jpg"></div>
+							</div>
+						</div>
+						<div class="thumbnail-footer">
+							<div class="details-top">
+								<div class="title">
+									<span>Title goes here</span>
+								</div>
+								<div class="editions">
+									<span>77 / 100</span>
+								</div>
+							</div>
+							<div class="details-bottom">
+								<div class="price">
+									<span class="eth">0.5 ETH</span>
+									<span class="usd">$125.38</span>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="thumbnail">
+						<div class="thumbnail-header">
+							<div class="user">
+								<div class="face">
+								</div>
+								<div class="name">
+									<span>billieeilish</span>
+								</div>
+							</div>
+							<div class="icons">
+							</div>
+						</div>
+						<div class="movie">
+							<div class="movie__card">
+								<div class="layer-1"><img src="dist/images/image3.jpg"></div>
+							</div>
+						</div>
+						<div class="thumbnail-footer">
+							<div class="details-top">
+								<div class="title">
+									<span>Title goes here</span>
+								</div>
+								<div class="editions">
+									<span>77 / 100</span>
+								</div>
+							</div>
+							<div class="details-bottom">
+								<div class="price">
+									<span class="eth">0.5 ETH</span>
+									<span class="usd">$125.38</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+	<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.1.min.js"><\\/script>')</script>
+	<!-- Place this tag right after the last button or just before your close body tag. -->
+	<script async defer id="github-bjs" src="https://buttons.github.io/buttons.js"></script>
+	
+	<script src="dist/js/jquery.hover3d.js" ></script>
+
+	<script>
+		$(document).ready(function(){
+			$(".project").hover3d({
+				selector: ".project__card"
+			});
+
+			$(".movie").hover3d({
+				selector: ".movie__card",
+				shine: false,
+				sensitivity: 20,
+			});
+		});
+
+	</script>
+</body>
+</html>
