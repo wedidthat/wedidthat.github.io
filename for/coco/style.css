@@ -84,6 +84,7 @@
   border: 2px solid black;
   display: inline-block;
   margin-right: 5px;
+  transition: 0.2s;
 }
 
 .user:hover .face {
@@ -165,6 +166,13 @@
   color: #666666;
 }
 
+.hover-zone {
+  cursor: pointer;
+}
+
+.hover-zone:hover .title {
+  color: #486BDD;
+}
 
 
 
