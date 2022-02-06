@@ -87,12 +87,11 @@ src: url("dist/fonts/Mulish-Bold.ttf") format("truetype");
 }
 
 .user {
-  width: 70%;
+  
   position: relative;
   display: flex;
   align-items: center;
   cursor: pointer;
-  flex-grow: 1;
 }
 
 .face {
@@ -126,12 +125,15 @@ src: url("dist/fonts/Mulish-Bold.ttf") format("truetype");
   display: flex;
   align-items: center;
   justify-content: end;
-  text-align: right;
-  width: 30%;
+}
+
+.space {
+  flex-grow: 1;
 }
 
 .icons > span {
   margin-right: 0px;
+  display: inline-block;
 }
 
 .icons > span:first-child {
