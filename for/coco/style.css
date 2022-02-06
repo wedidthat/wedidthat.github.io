@@ -65,6 +65,14 @@ src: url("dist/fonts/Mulish-Bold.ttf") format("truetype");
   transform: scale(1.02);
 }
 
+.movie:active {
+  transform: scale(1.01);
+}
+
+.movie .layer-1:active > img {
+  box-shadow: inset 0px 0px 0px 3px #000000;
+}
+
 .thumbnail {
   width: 100%;
   max-width: 300px;
