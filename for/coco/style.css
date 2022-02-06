@@ -126,6 +126,7 @@ src: url("dist/fonts/Mulish-Bold.ttf") format("truetype");
   display: flex;
   align-items: center;
   justify-content: end;
+  text-align: right;
   width: 30%;
 }
 
