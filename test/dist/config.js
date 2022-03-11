@@ -2,8 +2,8 @@
 var RM = window.RM = window.RM || {};
 
 window.RM.config = {
-  root: "/test/",
+  root: "/",
   pushState: true
 }
 
-window.chunkURL = "/test/dist/";
+window.chunkURL = "/dist/";
